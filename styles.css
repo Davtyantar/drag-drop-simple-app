@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  overflow: hidden;
+  margin: 0;
+  border: 5px dotted rgb(143, 9, 114);
+  max-width: 700px;
+  margin: 0px auto;
+  margin-top: 40px;
+  height: 310px;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.col-header {
+  width: 150px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  padding: 0.8rem 1rem;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  cursor: grab;
+  margin-top: 10px;
+  background-color: darkred;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background-color: #2a7532;
+}
+
+.progress {
+  background-color: #092d4b;
+}
+
+.done {
+  background-color: #af7318;
+}
+
+.hold { 
+  border: 5px ridge darkred;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  padding-top: 50px;
+  height: 200px;
+}
+
+.placeholder:nth-child(1).hovered {
+  border: 5px #2a7532 double;
+}
+
+.placeholder:nth-child(2).hovered {
+  border: 5px #092d4b double;
+}
+
+.placeholder:nth-child(3).hovered {
+  border: 5px #af7318 double;
+}
